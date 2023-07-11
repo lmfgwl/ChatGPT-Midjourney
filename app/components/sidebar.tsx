@@ -11,6 +11,7 @@ import CloseIcon from "../icons/close.svg";
 import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import OpscornIcon from "../icons/opscorn.svg";
+import WechatIcon from "../icons/wechat.svg";
 
 import Locale from "../locales";
 
@@ -23,6 +24,7 @@ import {
   Path,
   REPO_URL,
   OPSCORN_URL,
+  WECHAT_URL,
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -178,6 +180,13 @@ export function SideBar(props: { className?: string }) {
           <div className={styles["sidebar-action"]}>
             <a href={OPSCORN_URL} target="_blank">
               <IconButton icon={<OpscornIcon />} shadow />
+            </a>
+          </div>
+          <div className={styles["sidebar-action"]}>
+            <a href={WECHAT_URL} target="_blank">
+              <IconButton icon={<WechatIcon />}
+               text={shouldNarrow ? undefined : Locale.Weixin.Text}
+                          shadow />
             </a>
           </div>
         </div>
