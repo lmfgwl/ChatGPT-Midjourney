@@ -247,6 +247,9 @@ const en: RequiredLocaleType = {
   Plugin: {
     Name: "Plugin",
   },
+  Weixin: {
+    Text: "Wechat",
+  },
   Mask: {
     Name: "Mask",
     Page: {
