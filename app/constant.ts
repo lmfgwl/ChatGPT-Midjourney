@@ -1,8 +1,9 @@
-export const OWNER = "Licoy";
+export const OWNER = "lmfgwl";
 export const REPO = "ChatGPT-Midjourney";
-export const REPO_URL = `https://chatgpt-mj.up.railway.app`;
+export const REPO_URL = `https://moonvy.com/apps/ops`;
 export const ISSUE_URL = `https://github.com/${OWNER}/${REPO}/issues`;
 export const OPSCORN_URL = `https://moonvy.com/apps/ops`;
+export const WECHAT_URL = `https://cdn.discordapp.com/attachments/1125708015673286660/1127289305174380615/2.png`;
 export const UPDATE_URL = `${REPO_URL}#keep-updated`;
 export const FETCH_COMMIT_URL = `https://api.github.com/repos/${OWNER}/${REPO}/commits?per_page=1`;
 export const FETCH_TAG_URL = `https://api.github.com/repos/${OWNER}/${REPO}/tags?per_page=1`;
