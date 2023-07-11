@@ -245,7 +245,7 @@ const cn = {
     Name: "插件",
   },
   Weixin: {
-    Text:"微信",
+    Text:"客服",
   },
   Mask: {
     Name: "面具",
