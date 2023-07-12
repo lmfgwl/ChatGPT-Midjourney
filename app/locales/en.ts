@@ -250,6 +250,15 @@ const en: RequiredLocaleType = {
   Weixin: {
     Text: "Wechat",
   },
+  Tishici: {
+    Text: "Prompt",
+  },
+  Translate: {
+    Text:"Translate",
+  },
+  Tool: {
+    Text: "Tool",
+  },
   Mask: {
     Name: "Mask",
     Page: {
