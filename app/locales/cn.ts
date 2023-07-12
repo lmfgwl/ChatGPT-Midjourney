@@ -247,6 +247,15 @@ const cn = {
   Weixin: {
     Text:"客服",
   },
+  Tishici: {
+    Text:"提示词",
+  },
+  Translate: {
+    Text:"翻译",
+  },
+  Tool: {
+    Text:"工具",
+  },
   Mask: {
     Name: "面具",
     Page: {
