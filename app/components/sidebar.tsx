@@ -12,6 +12,7 @@ import MaskIcon from "../icons/mask.svg";
 import PluginIcon from "../icons/plugin.svg";
 import OpscornIcon from "../icons/opscorn.svg";
 import WechatIcon from "../icons/wechat.svg";
+import FanyiIcon from "../icons/fanyi.svg";
 
 import Locale from "../locales";
 
@@ -25,6 +26,7 @@ import {
   REPO_URL,
   OPSCORN_URL,
   WECHAT_URL,
+  FANYI_URL
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -177,20 +179,29 @@ export function SideBar(props: { className?: string }) {
               <IconButton icon={<SettingsIcon />} shadow />
             </Link>
           </div>
-          <div className={styles["sidebar-action"]}>
-            <a href={OPSCORN_URL} target="_blank">
-              <IconButton icon={<OpscornIcon />} shadow />
+          <div className={styles["sidebar-action"]} style={{ marginLeft: '-10px' }}>
+            <a href={OPSCORN_URL} target="_blank" style={{ textDecoration: 'none' }}>
+              <IconButton icon={<OpscornIcon />}
+                          text={shouldNarrow ? undefined : Locale.Tishici.Text}
+                          shadow />
             </a>
           </div>
-          <div className={styles["sidebar-action"]}>
-            <a href={WECHAT_URL} target="_blank">
+          <div className={styles["sidebar-action"]} style={{ marginLeft: '-10px' }}>
+            <a href={FANYI_URL} target="_blank" style={{ textDecoration: 'none' }}>
+              <IconButton icon={<FanyiIcon />}
+                          text={shouldNarrow ? undefined : Locale.Translate.Text}
+                          shadow />
+            </a>
+          </div>
+          <div className={styles["sidebar-action"]} style={{ marginLeft: '-10px' }}>
+            <a href={WECHAT_URL} target="_blank" style={{ textDecoration: 'none' }}>
               <IconButton icon={<WechatIcon />}
                text={shouldNarrow ? undefined : Locale.Weixin.Text}
                           shadow />
             </a>
           </div>
         </div>
-        <div>
+        <div style={{ transform: 'translate(-90px, -50px)' }}>
           <IconButton
             icon={<AddIcon />}
             text={shouldNarrow ? undefined : Locale.Home.NewChat}
